@@ -1,0 +1,12 @@
+@import url("/src/utils/css/reset.css");
+@import url("/src/utils/css/fonts.css");
+
+@import url("/src/utils/css/common.css");
+@import url("/src/style/Home/header.css");
+@import url("/src/style/Home/intro.css");
+@import url("/src/style/Home/slider.css");
+@import url("/src/style/Home/event.css");
+
+body {
+  margin: 0 6rem;
+}

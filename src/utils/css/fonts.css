@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Intro Book";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/Intro-Book.woff") format("woff");
+}
+@font-face {
+  font-family: "Intro Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Intro-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Intro Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/Intro-Regular.woff") format("woff");
+}

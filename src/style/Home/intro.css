@@ -1,0 +1,155 @@
+.intro {
+  margin-top: 17rem;
+}
+.intro__container {
+  display: flex;
+  justify-content: space-between;
+}
+.intro__left-block {
+  display: flex;
+  column-gap: 2.5rem;
+}
+.intro__nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.2rem;
+  width: 20rem;
+}
+.intro__link {
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  color: #333333;
+  transition: 0.4s ease all;
+}
+.intro__link:hover {
+  opacity: 0.4;
+}
+.intro__title {
+  font-family: "Intro Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11rem;
+  text-transform: uppercase;
+  color: #be3d3d;
+  width: 100%;
+  max-width: 56rem;
+}
+.intro__uppertitle {
+  width: 100%;
+  max-width: 40rem;
+  padding-left: 0.7rem;
+  line-height: 1.2;
+  margin-top: 1.6rem;
+}
+.intro__text {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 64rem;
+  margin-top: 2.4rem;
+  padding-left: 0.7rem;
+  line-height: 1.2;
+}
+.intro__card {
+  width: 42rem;
+  height: 35rem;
+  position: relative;
+  background: #f3f5f8;
+  padding: 2.4rem;
+  margin-right: 10rem;
+}
+.intro__card-upper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #dee2e9;
+  padding-bottom: 2.5rem;
+}
+.intro__card-text {
+  font-size: 1.7rem;
+}
+.intro__card-time {
+  display: flex;
+  column-gap: 2.7rem;
+}
+.intro__card-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro__time {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.intro__time-text {
+  font-family: "Intro Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 100%;
+  color: #333333;
+  opacity: 0.6;
+}
+.intro__card-bottom {
+  margin-top: 5rem;
+}
+.intro__card-bottom-ul {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.intro__card-bottom-li {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+.intro__card-date {
+  font-family: "Intro Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #333333;
+}
+.intro__card-title {
+  font-size: 2rem;
+  width: 100%;
+  max-width: 35.2rem;
+  margin-top: 1.8rem;
+}
+.intro__button {
+  width: 12rem;
+  height: 4.2rem;
+  border-radius: 7rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  border: .2rem solid #BE3D3D;
+  font-size: 1.3rem;
+  color: white;
+  transition: .4s ease all;
+  margin-top: 2.5rem;
+}
+.intro__button:hover {
+  color: black;
+}
+.intro__button::before {
+  transition: .4s ease all;
+  content: "";
+  position: absolute;
+  background-color: #BE3D3D;
+  width: 20rem;
+  height: 8rem;
+  border-radius: 50rem;
+  z-index: -1;
+  transform: translateY(0);
+  left: -5rem;
+  top: -1rem;
+  border-radius: 50%;
+}
+.intro__button:hover::before {
+  transform: translateY(7rem);
+}
+.intro__card-icon {
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,135 @@
+.event {
+  margin-top: 12.4rem;
+}
+.event__block-container {
+  display: flex;
+  column-gap: 4rem;
+  margin-top: 8rem;
+  overflow: hidden;
+}
+.event__upper-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event__title {
+  font-size: 4.3rem;
+  text-transform: uppercase;
+}
+.event__button {
+  width: 15rem;
+  height: 5.2rem;
+  border: .1rem solid black;
+  font-size: 1.3rem;
+}
+.event__button::before {
+  content: "";
+  background-color: black;
+}
+.event__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 52rem;
+}
+.event__block-text {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 37.2rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+.event__block-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.event__block-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+.event__block-li {
+  display: flex;
+  align-items: center;
+  column-gap: .8rem;
+}
+.event__block-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.event__block-icon-text {
+  font-size: 1.5rem;
+}
+.event__block-btn {
+  margin-top: 3.5rem;
+  width: 21.1rem;
+  height: 6rem;
+  font-size: 1.2rem;
+}
+.event-slider-block {
+  position: absolute;
+  width: 100rem;
+  height: 52rem;
+  overflow: hidden;
+  right: 0;
+}
+.event-swiper-wrapper {
+}
+.swiper-slide {
+}
+.event-image {
+  width: 79rem !important;
+  height: 52rem;
+  transform: scale(0.7) !important;
+  transition: .4s ease all;
+}
+img.swiper-slide.event-image.swiper-slide-active  {
+  transform: scale(1) !important;
+  transition: .4s ease all;
+}
+.event__btns {
+}
+.swiper-button-prev {
+}
+.event-prev-btn {
+}
+.swiper-button-next {
+}
+.event-next-btn {
+}
+
+.intro__button {
+  width: 12rem;
+  height: 4.2rem;
+  border-radius: 7rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  border: .2rem solid #BE3D3D;
+  font-size: 1.3rem;
+  color: white;
+  transition: .4s ease all;
+  margin-top: 2.5rem;
+}
+.intro__button:hover {
+  color: black;
+}
+.intro__button::before {
+  transition: .4s ease all;
+  content: "";
+  position: absolute;
+  background-color: #BE3D3D;
+  width: 20rem;
+  height: 8rem;
+  border-radius: 50rem;
+  z-index: -1;
+  transform: translateY(0);
+  left: -5rem;
+  top: -1rem;
+  border-radius: 50%;
+}
+.intro__button:hover::before {
+  transform: translateY(7rem);
+}
