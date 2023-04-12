@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import { SwiperModule } from "swiper/types/shared";
 import { ISlider } from "./interface";
 import { TSliderOptions } from "../../utils/types/type";
 
@@ -7,7 +8,7 @@ class Slider implements ISlider {
   modules: any[];
   SliderOptions: TSliderOptions;
 
-  constructor(block: string, modules: any[], SliderOptions: TSliderOptions) {
+  constructor(block: string, modules: SwiperModule[], SliderOptions: TSliderOptions) {
     this.block = block
     this.modules = modules
     this.SliderOptions = SliderOptions

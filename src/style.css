@@ -6,6 +6,7 @@
 @import url("/src/style/Home/intro.css");
 @import url("/src/style/Home/slider.css");
 @import url("/src/style/Home/event.css");
+@import url("/src/style/Home/lastevent.css");
 
 body {
   margin: 0 6rem;

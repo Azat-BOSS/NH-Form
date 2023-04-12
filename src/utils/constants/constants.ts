@@ -9,8 +9,8 @@ export const SliderOptions: TSliderOptions = {
     clickable: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".slider__btns .swiper-button-next",
+    prevEl: ".slider__btns .swiper-button-prev"
   },
   slidesPerView: 'auto',
   spaceBetween: 0,
@@ -19,8 +19,8 @@ export const SliderOptions: TSliderOptions = {
 export const EventOptions: TSliderOptions = {
   pagination: {},
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".event__btns .swiper-button-next",
+    prevEl: ".event__btns .swiper-button-prev"
   },
   slidesPerView: 'auto',
   spaceBetween: -50,

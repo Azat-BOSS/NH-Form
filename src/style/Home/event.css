@@ -6,6 +6,7 @@
   column-gap: 4rem;
   margin-top: 8rem;
   overflow: hidden;
+  position: relative;
 }
 .event__upper-block {
   display: flex;
@@ -75,12 +76,8 @@
   overflow: hidden;
   right: 0;
 }
-.event-swiper-wrapper {
-}
-.swiper-slide {
-}
 .event-image {
-  width: 79rem !important;
+  width: 75rem !important;
   height: 52rem;
   transform: scale(0.7) !important;
   transition: .4s ease all;
@@ -89,47 +86,107 @@ img.swiper-slide.event-image.swiper-slide-active  {
   transform: scale(1) !important;
   transition: .4s ease all;
 }
-.event__btns {
-}
-.swiper-button-prev {
-}
-.event-prev-btn {
-}
-.swiper-button-next {
-}
-.event-next-btn {
-}
-
-.intro__button {
-  width: 12rem;
-  height: 4.2rem;
+.event__block-btn {
+  width: 21.1rem;
+  height: 6rem;
   border-radius: 7rem;
   position: relative;
   overflow: hidden;
   z-index: 100;
-  border: .2rem solid #BE3D3D;
+  background-color: #d54d4d;
   font-size: 1.3rem;
   color: white;
   transition: .4s ease all;
   margin-top: 2.5rem;
 }
-.intro__button:hover {
-  color: black;
-}
-.intro__button::before {
-  transition: .4s ease all;
+.event__block-btn::before {
+  transition: .7s ease all;
   content: "";
   position: absolute;
-  background-color: #BE3D3D;
-  width: 20rem;
-  height: 8rem;
+  background-color: #cf2020;
+  width: 33rem;
+  height: 25rem;
   border-radius: 50rem;
   z-index: -1;
-  transform: translateY(0);
+  transform: translateY(15rem);
   left: -5rem;
-  top: -1rem;
+  top: -5rem;
   border-radius: 50%;
 }
-.intro__button:hover::before {
-  transform: translateY(7rem);
+.event__block-btn:hover::before {
+  transform: translateY(0)
+}
+.event-prev-btn {
+  position: relative;
+}
+.event-next-btn {
+  position: relative;
+}
+.event__btns .swiper-button-next::after {
+  content: ""
+} 
+.event__btns .swiper-button-prev::after {
+  content: ""
+}
+.event__btns {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+}
+.event__btns .swiper-button-prev {
+  position: static;
+  transition: .4s ease all;
+}
+.event__btns .swiper-button-next {
+  position: static;
+  transition: .4s ease all;
+}
+.event__btns .swiper-button-prev:hover {
+  opacity: .7;
+}
+.event__btns .swiper-button-next:hover {
+  opacity: .7;
+}
+.event__btns .event-next-btn::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/icons/rightBlackBtn.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.1rem;
+  height: 1.5rem;
+} 
+.event__btns .event-prev-btn::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/icons/leftBlackBtn.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.1rem;
+  height: 1.5rem;
+} 
+.event__btns .event-next-btn {
+  width: 3.7rem;
+  height: 4rem;
+  border-top: .15rem solid rgba(0, 0, 0, 0.411);
+  border-right: .15rem solid rgba(0, 0, 0, 0.411);
+  border-bottom: .15rem solid rgba(0, 0, 0, 0.411);
+  border-radius: 0 50% 50% 0;
+}
+.event__btns .event-prev-btn {
+  width: 3.7rem;
+  height: 4rem;
+  border-top: .15rem solid rgba(0, 0, 0, 0.411);
+  border-bottom: .15rem solid rgba(0, 0, 0, 0.411);
+  border-left: .15rem solid rgba(0, 0, 0, 0.411);
+  border-radius: 50% 0 0 50%;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  opacity: 1 !important;
 }

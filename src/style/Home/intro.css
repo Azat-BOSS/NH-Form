@@ -123,31 +123,28 @@
   position: relative;
   overflow: hidden;
   z-index: 100;
-  border: .2rem solid #BE3D3D;
+  background-color: #d54d4d;
   font-size: 1.3rem;
   color: white;
   transition: .4s ease all;
   margin-top: 2.5rem;
 }
-.intro__button:hover {
-  color: black;
-}
 .intro__button::before {
   transition: .4s ease all;
   content: "";
   position: absolute;
-  background-color: #BE3D3D;
+  background-color: #cf2020;
   width: 20rem;
   height: 8rem;
   border-radius: 50rem;
   z-index: -1;
-  transform: translateY(0);
+  transform: translateY(7rem);
   left: -5rem;
   top: -1rem;
   border-radius: 50%;
 }
 .intro__button:hover::before {
-  transform: translateY(7rem);
+  transform: translateY(0);
 }
 .intro__card-icon {
   width: 2rem;
