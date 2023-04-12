@@ -1,18 +1,27 @@
 .lastevent {
   margin-top: 25rem;
-  padding: 12.6rem 24rem;
+  padding: 12.6rem 16.5rem;
   background-color: #f3f5f8;
 }
-.lastevent__container {
+.lastevent__title-container {
+  position: relative;
 }
 .lastevent__upper-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 120rem;
 }
 .lastevent__title {
+  font-size: 4.2rem;
+  text-transform: uppercase;
 }
 .lastevent__title-number {
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+  font-size: 1.5rem;
+  opacity: .5;
 }
 .lastevent__button {
   width: 15rem;
@@ -28,14 +37,20 @@
 .lastevent__main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-top: 11.2rem;
   row-gap: 3rem;
 }
 .lastevent__card {
   display: flex;
   column-gap: 4.8rem;
+  align-items: center;
   padding-bottom: 2.8rem;
   border-bottom: .15rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 120rem;
 }
 .lastevent__image-block {
   width: 36rem;
@@ -82,17 +97,36 @@
   width: 1.8rem;
   height: 1.8rem;
 }
-.lastevent__card-date {
-}
 .lastevent__card-uppertitle {
   font-size: 2rem;
   width: 100%;
   max-width: 52rem;
   line-height: 1.2;
+  transition: .2s ease all;
 }
 .lastevent__card-text {
   font-size: 1.7rem;
   width: 100%;
-  max-width: 65rem;
+  max-width: 59rem;
   line-height: 1.3;
+}
+.lastevent__card-arrow::before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/icons/strelka.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  right: 0;
+  width: 8.6rem;
+  height: 8.6rem;
+  transition: .2s ease all;
+}
+
+.lastevent__card:hover .lastevent__card-arrow::before {
+  background-image: url("/images/icons/strelkaRed.svg");
+}
+
+.lastevent__card:hover .lastevent__card-uppertitle {
+  color: #BE3D3D;
 }
