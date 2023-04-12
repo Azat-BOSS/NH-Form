@@ -1,8 +1,11 @@
 .slider {
+  margin: 0 auto;
   margin-top: 6rem;
-  width: 100%;
+  width: 78%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .swiper-image {
   width: 100%;
@@ -75,8 +78,11 @@
   background-color: rgba(255, 255, 255, 0.411);
   border-radius: 50% 0 0 50%;
 }
+.slider-pagination {
+  margin-left: 7rem !important;
+}
 .slider-pagination .swiper-pagination-bullet {
-  width: 36rem;
+  width: 33rem;
   border-radius: 1rem;
   background-color: white;
   opacity: .2;
