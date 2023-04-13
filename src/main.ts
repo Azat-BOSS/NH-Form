@@ -1,21 +1,36 @@
-import Slider from './modules/Slider/Slider';
-import HeaderMove from './modules/HeaderMove/HeaderMove';
-import { SliderOptions, SliderModules, EventModules, EventOptions } from './utils/constants/constants';
+import 'parsleyjs';
+import IMask from 'imask';
+import validation from './modules/validator.d';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+const purchasesInp: any = document.querySelectorAll(".purchases__input")
+const purchasesLabel: any = document.querySelectorAll(".purchases__input__label")
+var contactInputPhone: any = document.getElementById("input-phone")
 
-function main(): void {
-  const slider = new Slider(".slider", SliderModules, SliderOptions)
-  const eventSlider = new Slider(".event-slider-block", EventModules, EventOptions)
-  const headerMove = new HeaderMove()
-
-  //sliders
-  slider.render
-  eventSlider.render
-
-  //header
-  headerMove.render
+let maskOptions = {
+  mask: '+{7}(000)000-00-00',
+  lazy: true
 }
-main()
+let mask = IMask(contactInputPhone, maskOptions);
+function handlePlaceholder(purchasesInp: HTMLInputElement[], purchasesLabel: HTMLLabelElement[]) {
+  purchasesInp.forEach((input, inpIdx) => {
+      purchasesLabel.forEach((label, labelIdx) => {
+        input.addEventListener("input", () => {
+          mask.updateValue()
+          if(input.type === "phone") {
+            mask.updateValue()
+          }
+          if(input.value === "" && inpIdx === labelIdx) {
+            label.classList.remove("purchases__input__label_active")
+          }
+          if(input.value !== "" && inpIdx === labelIdx) {
+            label.classList.add("purchases__input__label_active")
+          }
+        })
+      })
+  })
+}
+
+(function main():void {
+  handlePlaceholder(purchasesInp, purchasesLabel)
+  validation();
+}())
