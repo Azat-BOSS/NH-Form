@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Futura PT';
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	src: url('/fonts/FuturaPT-Book.woff');
+}
+
+@font-face {
+	font-family: 'Futura PT';
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+	src: url('/fonts/FuturaPT-Medium.woff');
+}
+
+@font-face {
+	font-family: 'Futura PT';
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+	src: url('/fonts/FuturaPT-Demi.woff');
+}
+
+@font-face {
+	font-family: 'Berlin Type';
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	src: url('/fonts/Berlin-Regular.woff');
+}
