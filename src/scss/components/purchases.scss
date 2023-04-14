@@ -311,6 +311,16 @@
     position: absolute !important;
   }
 }
+.test {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 640px){
+  .test {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 
 @media screen and (max-width: 500px){
   .purchases__title {
