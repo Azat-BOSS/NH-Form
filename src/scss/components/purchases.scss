@@ -79,6 +79,11 @@
   font-size: 1.8rem;
   line-height: 100%;
   color: #1c1c1c;
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 .purchases__input {
   width: 49.4rem;
