@@ -1,22 +1,7 @@
 {{#extend "layout"}}
     {{#content "main"}}
         {{> purchases-form}}
-        {{> reviews-section }}
-        <section class="news-section">
-            <div class="container">
-                <div class="news-section__title-wrapper">
-                    <h2 class="news-section__title js-title-animate">Пресс-центр</h2>
-                </div>
-                <header class="news-section__header">
-                    <div class="news-section__filter">
-                        {{> press-filter data=pressFilter }}
-                    </div>
-                    <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
-                </header>
-                {{> news-list data=news }}
-                <a class="news-section__tablet-link button button--bordered" href="news.html">Смотреть все</a>
-            </div>
-        </section>
+        {{> basket-popular}}
         <section class="awards js-section-animate">
             <div class="container">
                 <div class="awards__inner">
@@ -41,6 +26,21 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+                <section class="news-section">
+            <div class="container">
+                <div class="news-section__title-wrapper">
+                    <h2 class="news-section__title js-title-animate">Пресс-центр</h2>
+                </div>
+                <header class="news-section__header">
+                    <div class="news-section__filter">
+                        {{> press-filter data=pressFilter }}
+                    </div>
+                    <a class="news-section__link button button--bordered js-section-animate" href="news.html">Смотреть все</a>
+                </header>
+                {{> news-list data=news }}
+                <a class="news-section__tablet-link button button--bordered" href="news.html">Смотреть все</a>
             </div>
         </section>
 
